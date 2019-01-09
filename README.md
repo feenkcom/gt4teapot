@@ -1,2 +1,12 @@
 # gt4teapot
-GToolkit-based tools for Teapot
+Glamorous Toolkit for Teapot
+
+## How to load
+
+Execute the following code in a [Glamorous Toolkit image](https://github.com/feenkcom/gtoolkit):
+```
+Metacello new
+   baseline: 'GToolkit4P3';
+   repository: 'github://feenkcom/gt4p3';
+   load.
+```
