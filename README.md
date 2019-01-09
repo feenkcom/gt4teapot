@@ -1,5 +1,5 @@
 # gt4teapot
-[Glamorous Toolkit](https://github.com/feenkcom/gtoolkit) for [Teapot](https://github.com/zeroflag/Teapot). Teapot is a micro web framework for [Pharo](http://pharo.org).
+[Glamorous Toolkit](https://github.com/feenkcom/gtoolkit) for [Teapot](https://github.com/zeroflag/Teapot). Teapot is a micro web framework for Pharo.
 
 ## How to load
 
