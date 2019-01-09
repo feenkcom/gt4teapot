@@ -3,7 +3,8 @@
 
 ## How to load
 
-Execute the following code in a [Glamorous Toolkit image](https://github.com/feenkcom/gtoolkit):
+Execute the following code in a [Glamorous Toolkit image](https://gtoolkit.com):
+
 ```
 Metacello new
    baseline: 'GToolkit4P3';
