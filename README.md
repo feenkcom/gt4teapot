@@ -1,4 +1,4 @@
-# GToolkit 4 Teapot
+# GToolkit for Teapot
 [Glamorous Toolkit](https://github.com/feenkcom/gtoolkit) for [Teapot](https://github.com/zeroflag/Teapot). Teapot is a micro web framework for Pharo.
 
 ## How to load
