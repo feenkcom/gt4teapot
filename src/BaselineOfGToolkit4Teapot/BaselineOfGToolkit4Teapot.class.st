@@ -10,6 +10,6 @@ BaselineOfGToolkit4Teapot >> baseline: spec [
 	spec
 		for: #common
 		do: [
-			spec baseline: 'Teapot' with: [ spec repository: 'github://zeroflag/teapot/source' ].
+			spec baseline: 'Teapot' with: [ spec repository: 'github://feenkcom/teapot/source' ].
 			spec package: 'GToolkit4Teapot' with: [ spec requires: #(Teapot) ] ]
 ]
