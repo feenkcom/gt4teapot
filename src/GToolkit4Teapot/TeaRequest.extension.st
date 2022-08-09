@@ -27,6 +27,24 @@ TeaRequest >> gtJsonFor: aView [
 ]
 
 { #category : #'*GToolkit4Teapot' }
+TeaRequest >> gtPathParamsFor: aView [
+	<gtView>
+	pathParams ifNil: [ ^ aView empty ].
+
+	^ aView columnedList
+		title: 'Path and Query Params';
+		priority: 47;
+		items: [ pathParams associations
+				, (znRequest uri
+						in: [ :anUrl | anUrl hasQuery ifTrue: [ anUrl query associations ] ifFalse: [ #() ] ]) ];
+		column: 'Name' text: #key;
+		column: 'Value'
+			text: #value
+			weight: 3;
+		actionUpdateButton
+]
+
+{ #category : #'*GToolkit4Teapot' }
 TeaRequest >> gtTextContentsFor: aView [
 	<gtView>
 	znRequest ifNil: [ ^ aView empty ].
