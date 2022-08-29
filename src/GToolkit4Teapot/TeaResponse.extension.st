@@ -24,7 +24,15 @@ TeaResponse >> gtJsonFor: aView [
 			textEditor styler: JSONParser gtStyler.
 			editorElement := BrEditorElement new.
 			editorElement editor: textEditor.
-			text := (STONJSON toStringPretty: self body) asRopedText.
+			text := String
+					streamContents: [ :aStream | 
+						STONWriter new
+							on: aStream;
+							jsonMode: true;
+							prettyPrint: true;
+							referencePolicy: #ignore;
+							nextPut: self body ].
+			text := text asRopedText.
 			text
 				glamorousCodeFontDo: #beNotOverwritableByStyler;
 				glamorousCodeSizeDo: #beNotOverwritableByStyler.
