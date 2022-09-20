@@ -1,6 +1,11 @@
 Extension { #name : #Teapot }
 
 { #category : #'*GToolkit4Teapot' }
+Teapot >> gtRoutes [
+	^ dynamicRouter routes
+]
+
+{ #category : #'*GToolkit4Teapot' }
 Teapot >> gtRoutesFor: aView [
 	<gtView>
 	^ aView list
