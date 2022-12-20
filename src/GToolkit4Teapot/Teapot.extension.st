@@ -13,3 +13,8 @@ Teapot >> gtRoutesFor: aView [
 		items: [ dynamicRouter routes ];
 		itemText: [ :each | each printString ]
 ]
+
+{ #category : #'*GToolkit4Teapot' }
+Teapot >> publicUrl [
+	^ self server url
+]
