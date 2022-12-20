@@ -7,7 +7,7 @@ Execute the following code in a [Glamorous Toolkit image](https://gtoolkit.com):
 
 ```
 Metacello new
-   baseline: 'GToolkit4P3';
-   repository: 'github://feenkcom/gt4p3';
+   baseline: 'GToolkit4Teapot';
+   repository: 'github://feenkcom/gt4teapot/src';
    load.
 ```
